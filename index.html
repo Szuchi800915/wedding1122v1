@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szuchi & Poting | Wedding Invitation</title>
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Noto+Serif+TC:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -39,7 +35,6 @@
         }
     </script>
 
-    <!-- Custom CSS Styles -->
     <style>
         body {
             font-family: 'Noto Serif TC', 'Cormorant Garamond', serif;
@@ -53,18 +48,18 @@
         }
 
         .glass-nav {
-            background: rgba(250, 248, 245, 0.75);
+            background: rgba(250, 248, 245, 0.85);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(212, 163, 115, 0.15);
         }
 
         .glass-card {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.88);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             box-shadow: 0 10px 30px -5px rgba(141, 163, 153, 0.15), 0 4px 12px -2px rgba(212, 163, 115, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.95);
         }
 
         .glow-card {
@@ -89,12 +84,10 @@
             box-shadow: 0 6px 20px rgba(212, 163, 115, 0.35);
         }
 
-        /* Prevent auto text break for key address & location elements on mobile */
         .no-wrap {
             white-space: nowrap !important;
         }
 
-        /* Accordion Smooth Transition */
         .accordion-content {
             max-height: 0;
             overflow: hidden;
@@ -107,7 +100,6 @@
             opacity: 1;
         }
 
-        /* Form section transition */
         .conditional-field {
             transition: all 0.3s ease-in-out;
         }
@@ -115,11 +107,10 @@
 </head>
 <body class="antialiased selection:bg-morandi-gold selection:text-white">
 
-    <!-- Navigation Bar -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="font-cormorant text-2xl font-semibold tracking-wider gold-gradient-text">
-                S & P
+            <a href="#" class="font-tc text-lg md:text-xl font-semibold tracking-widest gold-gradient-text">
+                P.S. 我們結婚了!
             </a>
             
             <!-- Desktop Menu -->
@@ -145,9 +136,7 @@
         </div>
     </nav>
 
-    <!-- Hero Cover Section -->
     <section class="relative min-h-screen flex items-center justify-center bg-cover bg-center overflow-hidden" style="background-image: url('https://i.postimg.cc/k4MsKpfQ/20260319-SAM07577-1.jpg');">
-        <!-- Soft Romantic Overlay -->
         <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
 
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto flex flex-col items-center">
@@ -166,7 +155,7 @@
             </p>
 
             <p class="tracking-widest text-sm md:text-base text-stone-200 mt-2 font-light">
-                2026 . 11 . 22
+                2026.11.22 18:00-21:00
             </p>
 
             <a href="#rsvp" class="mt-8 px-8 py-3 rounded-full gold-button text-white text-xs md:text-sm tracking-[0.2em] font-medium shadow-lg hover:scale-105 transition-transform duration-300 uppercase">
@@ -174,50 +163,40 @@
             </a>
         </div>
 
-        <!-- Scroll Indicator -->
         <a href="#countdown" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 hover:text-white transition-colors animate-bounce">
             <i class="fa-solid fa-chevron-down text-lg"></i>
         </a>
     </section>
 
-    <!-- Countdown Timer Section -->
     <section id="countdown" class="py-16 px-4 bg-morandi-warmGray relative">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-8">
                 <span class="font-cormorant text-xs md:text-sm tracking-[0.3em] text-morandi-sage uppercase font-semibold">COUNTDOWN</span>
-                <h2 class="text-2xl md:text-3xl font-light text-morandi-textDark tracking-widest mt-1">倒數喜悅 Moment</h2>
+                <h2 class="text-2xl md:text-3xl font-light text-morandi-textDark tracking-widest mt-1">倒數喜悅</h2>
             </div>
 
-            <!-- Soft Micro-Glow Cards Container -->
             <div class="flex justify-center items-center gap-2 md:gap-6 max-w-2xl mx-auto">
-                <!-- Days Card -->
                 <div class="flex-1 max-w-[110px] md:max-w-[130px] glow-card rounded-2xl p-3 md:p-5 text-center relative">
                     <span id="days" class="font-cormorant text-3xl md:text-5xl font-semibold text-morandi-textDark block">00</span>
                     <span class="text-[10px] md:text-xs tracking-widest text-morandi-textLight uppercase mt-1 block">DAYS 天</span>
                 </div>
 
-                <!-- Separator Line -->
                 <div class="h-10 md:h-14 w-[1px] bg-morandi-gold/30"></div>
 
-                <!-- Hours Card -->
                 <div class="flex-1 max-w-[110px] md:max-w-[130px] glow-card rounded-2xl p-3 md:p-5 text-center relative">
                     <span id="hours" class="font-cormorant text-3xl md:text-5xl font-semibold text-morandi-textDark block">00</span>
                     <span class="text-[10px] md:text-xs tracking-widest text-morandi-textLight uppercase mt-1 block">HOURS 時</span>
                 </div>
 
-                <!-- Separator Line -->
                 <div class="h-10 md:h-14 w-[1px] bg-morandi-gold/30"></div>
 
-                <!-- Minutes Card -->
                 <div class="flex-1 max-w-[110px] md:max-w-[130px] glow-card rounded-2xl p-3 md:p-5 text-center relative">
                     <span id="minutes" class="font-cormorant text-3xl md:text-5xl font-semibold text-morandi-textDark block">00</span>
                     <span class="text-[10px] md:text-xs tracking-widest text-morandi-textLight uppercase mt-1 block">MINS 分</span>
                 </div>
 
-                <!-- Separator Line -->
                 <div class="h-10 md:h-14 w-[1px] bg-morandi-gold/30"></div>
 
-                <!-- Seconds Card -->
                 <div class="flex-1 max-w-[110px] md:max-w-[130px] glow-card rounded-2xl p-3 md:p-5 text-center relative">
                     <span id="seconds" class="font-cormorant text-3xl md:text-5xl font-semibold text-morandi-gold block">00</span>
                     <span class="text-[10px] md:text-xs tracking-widest text-morandi-textLight uppercase mt-1 block">SECS 秒</span>
@@ -226,7 +205,6 @@
         </div>
     </section>
 
-    <!-- About Us Section -->
     <section id="about" class="py-20 px-6 max-w-4xl mx-auto">
         <div class="text-center mb-12">
             <span class="font-cormorant text-xs md:text-sm tracking-[0.3em] text-morandi-sage uppercase font-semibold">OUR STORY</span>
@@ -245,14 +223,13 @@
                 誠摯邀請您與我們一同見證這份美好的承諾。
             </p>
             <div class="flex justify-center items-center space-x-4 md:space-x-6 text-sm tracking-widest pt-4 border-t border-stone-200/60">
-                <span class="font-semibold text-morandi-textDark">GROOM: <span class="text-morandi-gold"><span class="font-cormorant text-xl">Szuchi</span> <span class="font-tc font-normal">思齊</span></span></span>
+                <span class="font-semibold text-morandi-gold"><span class="font-cormorant text-xl">GROOM: Szuchi</span> <span class="font-tc font-normal">思齊</span></span>
                 <span class="text-morandi-sage">♥</span>
-                <span class="font-semibold text-morandi-textDark">BRIDE: <span class="text-morandi-gold"><span class="font-cormorant text-xl">Poting</span> <span class="font-tc font-normal">博庭</span></span></span>
+                <span class="font-semibold text-morandi-gold"><span class="font-cormorant text-xl">BRIDE: Poting</span> <span class="font-tc font-normal">博庭</span></span>
             </div>
         </div>
     </section>
 
-    <!-- Wedding Banquet Details (2-Column Grid + Transportation Below) -->
     <section id="details" class="py-20 px-4 bg-morandi-warmGray">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-12">
@@ -278,8 +255,8 @@
                         </p>
                     </div>
                     <div class="mt-auto">
-                        <button type="button" onclick="addToIosCalendar()" class="inline-flex items-center text-xs tracking-wider border border-morandi-gold text-morandi-gold hover:bg-morandi-gold hover:text-white px-4 py-2 rounded-full transition-colors duration-300">
-                            <i class="fa-brands fa-apple mr-2 text-sm"></i> 加入 iOS 行事曆
+                        <button type="button" onclick="addToCalendar()" class="inline-flex items-center text-xs tracking-wider border border-morandi-gold text-morandi-gold hover:bg-morandi-gold hover:text-white px-4 py-2 rounded-full transition-colors duration-300">
+                            <i class="fa-regular fa-calendar-plus mr-2"></i> 加入行事曆
                         </button>
                     </div>
                 </div>
@@ -306,7 +283,7 @@
                 </div>
             </div>
 
-            <!-- Bottom: Transportation Accordion (交通指引) -->
+            <!-- Transportation Accordion -->
             <div class="glass-card rounded-2xl p-6 md:p-8">
                 <div class="flex justify-between items-center cursor-pointer" id="accordionToggle">
                     <div class="flex items-center space-x-4">
@@ -323,10 +300,8 @@
                     </div>
                 </div>
 
-                <!-- Hidden Accordion Content -->
                 <div id="accordionContent" class="accordion-content border-t border-stone-200/60 mt-4 pt-4 text-sm leading-relaxed text-morandi-textDark">
                     <div class="space-y-4 pt-2">
-                        <!-- MRT -->
                         <div class="flex items-start space-x-3">
                             <div class="text-morandi-gold mt-1"><i class="fa-solid fa-train-subway"></i></div>
                             <div>
@@ -337,7 +312,6 @@
                             </div>
                         </div>
 
-                        <!-- Driving & Parking -->
                         <div class="flex items-start space-x-3">
                             <div class="text-morandi-gold mt-1"><i class="fa-solid fa-car"></i></div>
                             <div>
@@ -348,7 +322,6 @@
                             </div>
                         </div>
 
-                        <!-- Full Address -->
                         <div class="flex items-start space-x-3">
                             <div class="text-morandi-gold mt-1"><i class="fa-solid fa-map-pin"></i></div>
                             <div>
@@ -364,15 +337,13 @@
         </div>
     </section>
 
-    <!-- Hidden Iframe for Form Submission -->
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { showSuccessModal(); }"></iframe>
 
-    <!-- RSVP Section -->
     <section id="rsvp" class="py-20 px-4 max-w-3xl mx-auto">
         <div class="text-center mb-12">
             <span class="font-cormorant text-xs md:text-sm tracking-[0.3em] text-morandi-sage uppercase font-semibold">RSVP</span>
             <h2 class="text-2xl md:text-3xl font-light text-morandi-textDark tracking-widest mt-1">出席回函</h2>
-            <p class="text-xs text-morandi-textLight mt-2 tracking-wider">請於 2026 年 10 月 1 日前填寫，以利我們安排席次</p>
+            <p class="text-xs text-morandi-textLight mt-2 tracking-wider">請於 2026 年 9 月 22 日前填寫，以利我們安排席次</p>
             <div class="w-12 h-[1px] bg-morandi-gold mx-auto mt-4"></div>
         </div>
 
@@ -447,7 +418,7 @@
                     </select>
                 </div>
 
-                <!-- Conditional 1: 郵寄地址 ADDRESS (只有選擇紙本喜帖才會顯示) -->
+                <!-- Conditional 1: 郵寄地址 ADDRESS -->
                 <div id="addressField" class="conditional-field hidden">
                     <label class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-textDark mb-2">
                         郵寄地址 <span class="font-cormorant text-morandi-gold uppercase font-normal">ADDRESS</span> <span class="text-red-400">*</span>
@@ -466,7 +437,7 @@
                     </select>
                 </div>
 
-                <!-- Conditional 2: 素食份數 VEGETARIAN MEALS (選擇素食才會顯示) -->
+                <!-- Conditional 2: 素食份數 VEGETARIAN MEALS -->
                 <div id="vegetarianField" class="conditional-field hidden">
                     <label class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-textDark mb-2">
                         素食份數 <span class="font-cormorant text-morandi-gold uppercase font-normal">VEGETARIAN MEALS</span> <span class="text-red-400">*</span>
@@ -490,7 +461,7 @@
                     </select>
                 </div>
 
-                <!-- Conditional 3: 兒童椅數量 HIGH CHAIR COUNT (選擇需要才會顯示) -->
+                <!-- Conditional 3: 兒童椅數量 HIGH CHAIR COUNT -->
                 <div id="highChairCountField" class="conditional-field hidden">
                     <label class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-textDark mb-2">
                         兒童椅數量 <span class="font-cormorant text-morandi-gold uppercase font-normal">HIGH CHAIR COUNT</span> <span class="text-red-400">*</span>
@@ -520,7 +491,6 @@
         </div>
     </section>
 
-    <!-- Success Modal -->
     <div id="successModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
         <div class="bg-white rounded-3xl p-8 max-w-md w-full text-center shadow-2xl transform scale-95 transition-transform duration-300" id="modalContainer">
             <div class="w-16 h-16 rounded-full bg-morandi-sage/20 text-morandi-sage mx-auto flex items-center justify-center text-3xl mb-4">
@@ -536,7 +506,6 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
     <footer class="py-12 bg-stone-900 text-stone-400 text-center text-xs tracking-widest border-t border-stone-800">
         <div class="max-w-4xl mx-auto px-4 space-y-3">
             <p class="font-cormorant text-xl text-morandi-gold">Szuchi & Poting</p>
@@ -545,11 +514,10 @@
         </div>
     </footer>
 
-    <!-- JavaScript Section -->
     <script>
         var submitted = false;
 
-        // 1. Interactive Mobile Navigation Toggle
+        // 1. Mobile Navigation Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
@@ -564,7 +532,7 @@
             });
         });
 
-        // 2. Countdown Timer Logic Target Date: 2026-11-22 18:00:00
+        // 2. Countdown Timer Logic (Target Date: 2026-11-22 18:00:00)
         const targetDate = new Date('2026-11-22T18:00:00').getTime();
 
         function updateCountdown() {
@@ -592,7 +560,7 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // 3. Accordion Transportation Toggle Logic
+        // 3. Transportation Accordion Toggle
         const accordionToggle = document.getElementById('accordionToggle');
         const accordionContent = document.getElementById('accordionContent');
         const accordionIcon = document.getElementById('accordionIcon');
@@ -608,7 +576,7 @@
             }
         });
 
-        // 4. Smart Conditional Form Logic
+        // 4. Form Conditional Fields Logic
         const invitationType = document.getElementById('invitationType');
         const addressField = document.getElementById('addressField');
         const addressInput = document.getElementById('addressInput');
@@ -621,7 +589,6 @@
         const highChairCountField = document.getElementById('highChairCountField');
         const highChairCountInput = document.getElementById('highChairCountInput');
 
-        // Logic for Wedding Invitation -> Address
         invitationType.addEventListener('change', function() {
             if (this.value === '紙本喜帖') {
                 addressField.classList.remove('hidden');
@@ -633,7 +600,6 @@
             }
         });
 
-        // Logic for Dietary -> Vegetarian Count
         dietarySelect.addEventListener('change', function() {
             if (this.value === '素食') {
                 vegetarianField.classList.remove('hidden');
@@ -644,7 +610,6 @@
             }
         });
 
-        // Logic for High Chair -> High Chair Count
         highChairSelect.addEventListener('change', function() {
             if (this.value === '需要') {
                 highChairCountField.classList.remove('hidden');
@@ -655,7 +620,7 @@
             }
         });
 
-        // 5. Success Modal Handling
+        // 5. Success Modal Logic
         function showSuccessModal() {
             const modal = document.getElementById('successModal');
             const container = document.getElementById('modalContainer');
@@ -666,7 +631,6 @@
                 container.classList.add('scale-100');
             }, 10);
             
-            // Reset Form
             document.getElementById('rsvpForm').reset();
             addressField.classList.add('hidden');
             vegetarianField.classList.add('hidden');
@@ -685,13 +649,12 @@
             }, 300);
         }
 
-        // 6. iOS / iCal Calendar Event Generation
-        function addToIosCalendar() {
+        // 6. Calendar Event (.ics) Generation
+        function addToCalendar() {
             const title = "Szuchi & Poting 婚禮宴會";
             const details = "誠摯邀請您參加 Szuchi & Poting 的婚禮宴會！\\n17:30 恭候入席，18:00 準時開席。";
             const location = "台北美福大飯店 2F宴會廳 (台北市中山區樂群二路55號)";
             
-            // Event start & end time (UTC+8 conversion to UTC: 2026-11-22 17:30 -> 09:30Z)
             const icsContent = 
 `BEGIN:VCALENDAR
 VERSION:2.0
@@ -710,11 +673,9 @@ END:VCALENDAR`;
             const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
             
             if (isIOS) {
-                // Open native iOS Calendar prompt
                 const dataUri = 'data:text/calendar;charset=utf8,' + encodeURIComponent(icsContent);
                 window.location.href = dataUri;
             } else {
-                // Fallback .ics file download
                 const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8;' });
                 const link = document.createElement('a');
                 link.href = window.URL.createObjectURL(blob);
